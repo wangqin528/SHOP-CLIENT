@@ -5,6 +5,7 @@ import Register from '@/pages/Register'
 import Login from '@/pages/Login'
 
 
+
 export default[
     {
         path:'/',
@@ -13,16 +14,25 @@ export default[
    
    
     {
-        path:'/search',
-        component:Search
+        name:'Search',
+        path:'/search/:keyword?',//使用params参数携带数据  ?代表params参数可以不传
+        component:Search,
+        //将query/params参数映射成props传递给路由组件
+        props:(route)=>({keyword1:route.params.keyword,keyword2:route.query.keyword})
     }, 
     {
         path:'/register',
-        component:Register
+        component:Register,
+        meta:{
+            isHideFooter:true,//标识footer是否隐藏
+        }
     },
     {
         path:'/login',
-        component:Login
+        component:Login,
+        meta:{
+            isHideFooter:true,//标识footer是否隐藏
+        }
     },
 ]
 
