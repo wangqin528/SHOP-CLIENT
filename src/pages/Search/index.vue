@@ -1,5 +1,7 @@
 <template>
   <div>
+     <!-- 商品分类导航 -->
+    <TypeNav/>
     <h2>Search</h2>
     <p>query参数：keyeord={{$route.query.keyword}}</p>
     <p>params参数：keyeord={{$route.params.keyword}}</p>
