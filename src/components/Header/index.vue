@@ -26,9 +26,9 @@
     <!--头部第二行 搜索区域-->
     <div class="bottom">
       <h1 class="logoArea">
-        <a class="logo" title="尚品汇" href="###" target="_blank">
+        <router-link class="logo" to="/">
           <img src="./images/Logo.png" alt="">
-        </a>
+        </router-link>
       </h1>
       <div class="searchArea">
         <form action="###" class="searchForm">
@@ -69,8 +69,12 @@
      //使用params参数
     //  this.$router.push(`/search/${this.keyword}`)
     //this.$router.push({path: '/search', params:{keyword:this.keyword}})不可以
-    this.$router.push({name: 'Search', params:{keyword:this.keyword}})
-
+    
+    if(this.keyword){
+      this.$router.push({name: 'Search', params:{keyword:this.keyword}})
+    }else{
+      this.$router.push({name:'Search'})
+    }
       //this.$router.replace('/search')index.js方法二里面失败的回调
      
       //  this.$route//得到的是当前路由信息对象（包含当前路由的相关数据属性 path/params/query/meta）
