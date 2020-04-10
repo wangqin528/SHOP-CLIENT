@@ -81,7 +81,7 @@
                     </li>
                 </ul>
                 <div class="ads">
-                    <img src="/images/ad1.png" />
+                    <img src="./images/ad1.png" />
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@
                         width: 25%;
 
                         .list-item {
-                            background-image: url(/images/icons.png);
+                            background-image: url(../images/icons.png);
                             width: 61px;
                             height: 40px;
                             display: block;
