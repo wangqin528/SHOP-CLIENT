@@ -2,34 +2,8 @@
     <div class="list-container">
         <div class="sortList clearfix">
             <div class="center">
-<<<<<<< HEAD
-                <!--banner轮播-->
-                <div class="swiper-container" id="mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="../images/home/banner3.jpg" />
-                        </div>
-                        <!-- <div class="swiper-slide">
-                <img src="../images/home/banner2.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../images/home/banner3.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../images/home/banner4.jpg" />
-              </div> -->
-                    </div>
-                    <!-- 如果需要分页器 -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- 如果需要导航按钮 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-=======
                 <!-- banner轮播  -->
                <Carousel :carouselList="banners"/>
->>>>>>> dev
             </div>
             <div class="right">
                 <div class="news">
@@ -107,11 +81,7 @@
                     </li>
                 </ul>
                 <div class="ads">
-<<<<<<< HEAD
-                    <img src="../images/home/ad1.png" />
-=======
                     <img src="/images/ad1.png" />
->>>>>>> dev
                 </div>
             </div>
         </div>
@@ -120,10 +90,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-<<<<<<< HEAD
-    export default {
-        name: '',
-=======
     
     import {mapState} from 'vuex'
 
@@ -136,7 +102,6 @@
                 banners:state=>state.home.banners
             })
         }
->>>>>>> dev
     }
 </script>
 
@@ -211,11 +176,7 @@
                         width: 25%;
 
                         .list-item {
-<<<<<<< HEAD
-                            background-image: url(../images/home/icons.png);
-=======
                             background-image: url(/images/icons.png);
->>>>>>> dev
                             width: 61px;
                             height: 40px;
                             display: block;

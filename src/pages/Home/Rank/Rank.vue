@@ -86,11 +86,7 @@
 
 <script type="text/ecmascript-6">
     export default {
-<<<<<<< HEAD
-        name: '',
-=======
         name: 'Rank',
->>>>>>> dev
     }
 </script>
 
