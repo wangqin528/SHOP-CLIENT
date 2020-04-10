@@ -64,20 +64,16 @@
 <style lang="less" scoped>
     .like {
         margin-top: 15px;
-
         .py-container {
             width: 1200px;
             margin: 0 auto;
-
             .title {
                 overflow: hidden;
-
                 .fl {
                     float: left;
                     font-size: 20px;
                     line-height: 30px;
                 }
-
                 .fr {
                     float: right;
                     background-image: url(../images/home/icons.png);
@@ -91,7 +87,6 @@
                     text-decoration: none;
                 }
             }
-
             .bd {
                 .favourate {
                     border: 1px solid #e4e4e4;
@@ -99,7 +94,6 @@
                     padding: 0 10px;
                     box-sizing: border-box;
                     display: flex;
-
                     li {
                         height: 250px;
                         margin: 0 -1px;
@@ -111,27 +105,22 @@
                         flex-direction: column;
                         align-items: center;
                         cursor: pointer;
-
                         img {
                             width: 142px;
                             height: 142px;
                             transition: all 400ms;
-
                             &:hover {
                                 opacity: 0.8;
                                 transform: scale(1.1)
                             }
                         }
-
                         .like-text {
                             padding: 0;
                             width: 142px;
                             border-right: 1px solid #e4e4e4;
-
                             p {
                                 margin: 5px 0;
                             }
-
                             h3 {
                                 color: #df3033;
                                 font-size: 20px;
