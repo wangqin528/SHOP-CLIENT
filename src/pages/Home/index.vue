@@ -31,7 +31,7 @@ import {mapState} from 'vuex'
 import TodayRemmond from './TodayRemmond/TodayRemmond'
 import Branch from './Branch/Branch'
 import Floor from './Floor/Floor'
-import Like from './Like/Like'
+import Like from './Like/like'
 import ListContainer from './ListContainer/ListContainer'
 import Rank from './Rank/Rank'
   export default {
